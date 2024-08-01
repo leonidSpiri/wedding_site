@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <h1>Leonid & Olga</h1>
-    <p>Родные и любимые. Хотим чтобы Вы разделили с нами радость и были на торжестве в самый лучший и трогательный день
+    <p>Родные и любимые! Хотим чтобы Вы разделили с нами радость и были на торжестве в самый лучший и трогательный день
         в нашей жизни!</p>
     <h2>21 сентября 2024 Суббота. 11:00</h2>
     <h2>Ждем вас!</h2>
@@ -31,7 +31,7 @@
             const textMinute = Math.floor((gap % hour) / minute);
             const textSecond = Math.floor((gap % minute) / second);
 
-            document.querySelector(".timer").innerText = `Время до свадьбы: ${textDay} дней, ${textHour} часов, ${textMinute} минут, ${textSecond} секунд`;
+            document.querySelector(".timer").innerText = `Время до свадьбы:\n ${textDay} дней, ${textHour} часов, ${textMinute} минут, ${textSecond} секунд`;
 
             if (gap < 0) {
                 clearInterval(intervalId);
@@ -40,16 +40,16 @@
         };
         const intervalId = setInterval(countdown, 1000);
     </script>
-    <img src="img/img_01.png" alt="Our photo" width="600" height="auto">
+    <img src="img/img_03.jpg" alt="Our photo" width="200" height="auto">
 
     <h2>Дорогой Гость!</h2>
     <p>Мы рады сообщить, что 21.09.2024 состоится НАША СВАДЬБА! Приглашаем Вас разделить с нами радость этого
         незабываемого дня.</p>
-    <p>ПОЖЕЛАНИЯ ПО ПОДАРКАМ<br>Ваше присутствие в день нашей свадьбы - самый значимый подаро для нас!</p>
+    <p>ПОЖЕЛАНИЯ ПО ПОДАРКАМ<br>Ваше присутствие в день нашей свадьбы - самый значимый подарок для нас!</p>
     <p>ПОДТВЕРЖДЕНИЕ<br>Пожалуйста подтвердите свое присутствие до 01.09.2024</p>
     <p>Спасибо, что Вы с нами!</p>
     <p>После свадьбы на сайте появится ссылка на фото и видео</p>
-    <img src="img/img_02.jpg" alt="Our photo" width="600" height="auto">
+    <img src="img/img_02.jpg" alt="Our photo" width="200" height="auto">
     <!-- Wedding Schedule in Table -->
     <table>
         <tr>
@@ -70,7 +70,7 @@
             </td>
         </tr>
     </table>
-    <img src="img/img_03.jpg" alt="Our photo" width="600" height="auto">
+    <img src="img/img_01.png" alt="Our photo" width="200" height="auto">
     <!-- Placeholder for the map -->
     <h2>Location Map</h2>
     <div style="position:relative;overflow:hidden;"><a
