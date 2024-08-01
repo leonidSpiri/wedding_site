@@ -1,0 +1,39 @@
+/* Contents of style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/bg.jpg'); /* Update this path with your image file */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 650px;
+    margin: auto;
+    background-color: rgba(245, 245, 220, 0.8); /* Warm beige background with some transparency */
+    padding: 20px;
+}
+h1, h2 {
+    color: #b5651d; /* Warm brown for titles */
+}
+p {
+    margin: 10px 0;
+}
+.timer {
+    font-size: 24px;
+    color: #a52a2a;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+.address {
+    color: grey;
+}

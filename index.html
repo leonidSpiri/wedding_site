@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonid & Olga's Wedding</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Leonid & Olga</h1>
+    <p>Родные и любимые. Хотим чтобы Вы разделили с нами радость и были на торжестве в самый лучший и трогательный день
+        в нашей жизни!</p>
+    <h2>21 сентября 2024 Суббота. 11:00</h2>
+    <h2>Ждем вас!</h2>
+    <p class="timer"></p>
+    <script>
+        // Countdown timer setup
+        const countdown = () => {
+            const countDate = new Date("September 21, 2024 11:00:00").getTime();
+            const now = new Date().getTime();
+            const gap = countDate - now;
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const textDay = Math.floor(gap / day);
+            const textHour = Math.floor((gap % day) / hour);
+            const textMinute = Math.floor((gap % hour) / minute);
+            const textSecond = Math.floor((gap % minute) / second);
+
+            document.querySelector(".timer").innerText = `Время до свадьбы: ${textDay} дней, ${textHour} часов, ${textMinute} минут, ${textSecond} секунд`;
+
+            if (gap < 0) {
+                clearInterval(intervalId);
+                document.querySelector(".timer").innerText = "We are married!";
+            }
+        };
+        const intervalId = setInterval(countdown, 1000);
+    </script>
+    <img src="img/img_01.png" alt="Our photo" width="600" height="auto">
+
+    <h2>Дорогой Гость!</h2>
+    <p>Мы рады сообщить, что 21.09.2024 состоится НАША СВАДЬБА! Приглашаем Вас разделить с нами радость этого
+        незабываемого дня.</p>
+    <p>ПОЖЕЛАНИЯ ПО ПОДАРКАМ<br>Ваше присутствие в день нашей свадьбы - самый значимый подаро для нас!</p>
+    <p>ПОДТВЕРЖДЕНИЕ<br>Пожалуйста подтвердите свое присутствие до 01.09.2024</p>
+    <p>Спасибо, что Вы с нами!</p>
+    <p>После свадьбы на сайте появится ссылка на фото и видео</p>
+    <img src="img/img_02.jpg" alt="Our photo" width="600" height="auto">
+    <!-- Wedding Schedule in Table -->
+    <table>
+        <tr>
+            <td><b>11:00 21.09.2024</b></td>
+            <td>
+                <b>Торжественная роспись в отделе ЗАГС</b><br>
+                <span class="address">ЗАГС Петроградского района Большая Монетная ул., 17-19</span>
+            </td>
+        </tr>
+        <tr>
+            <td><b>12:00 21.09.2024</b></td>
+            <td>
+                <b>Фуршет</b><br>
+                <span class="address">Каменоостровский пр. 38/96, 3 этаж</span><br>
+                В пешей доступности от ЗАГСа находится уникальное арт-пространство KOKON SPACE, куда мы и отправимся
+                сразу после церемонии.
+                Здесь мы продолжим наше общение в уютной обстановке и поднимем бокалы за молодых.
+            </td>
+        </tr>
+    </table>
+    <img src="img/img_03.jpg" alt="Our photo" width="600" height="auto">
+    <!-- Placeholder for the map -->
+    <h2>Location Map</h2>
+    <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/org/otdel_zags_petrogradskogo_rayona/1368117968/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Department of the Civil Registry Office of the
+        Petrogradsky district</a><a
+            href="https://yandex.ru/maps/2/saint-petersburg/category/registery_office/184107242/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Registery office in Saint Petersburg</a>
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=30.314447%2C59.963741&mode=search&oid=1368117968&ol=biz&source=serp_navig&z=16.91"
+                width="600" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+</div>
+</body>
+</html>
