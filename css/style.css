@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('/img/bg.jpg'); /* Update this path with your image file */
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
     background-position: center;
     color: #333;
@@ -13,7 +13,7 @@ body {
 .container {
     max-width: 650px;
     margin: auto;
-    background-color: rgba(245, 245, 220, 0.8); /* Warm beige background with some transparency */
+    background-color: rgba(245, 245, 220, 0.6); /* Warm beige background with some transparency */
     padding: 20px;
 }
 h1, h2 {
